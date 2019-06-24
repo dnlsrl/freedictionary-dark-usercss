@@ -1,0 +1,119 @@
+/* ==UserStyle==
+@name        Dark Theme for The Free Dictionary
+@version     1.0
+@homepageURL https://https://github.com/dnlsrl/freedictionary-dark-usercss
+@updateURL   https://stylishthemes.github.io/GitHub-Dark/github-dark.user.css
+@license     MIT
+@author      dnlsrl
+==/UserStyle== */
+
+/* Dark theme for The Free Dictionary */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+}
+
+@-moz-document domain("www.thefreedictionary.com") {
+/* Word definition */
+/* Dark theme */
+#main,
+#Definition section:nth-child(2n),
+#Thesaurus section:nth-child(2n),
+#selectedLang,
+#LangDropdown {
+    background: #181818;
+}
+
+#ThesaurusHead,
+#TranslationsHead {
+    background: #202020;
+    padding: 5px 10px 5px 10px;
+    border: 1px #202020 solid;
+}
+
+#ThesaurusInner div:first-child {
+    background: #181818 !important;
+}
+
+table.prettytable td,
+table.prettytable th {
+    background: #202020;
+}
+
+body {
+    color: #bebebe;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+}
+
+/* Hides the unnecessary stuff */
+#header,
+aside,
+#browsers,
+.fixed-block,
+#footer,
+.afs_ads,
+#fb-root,
+#OccupSlider,
+.TopBannerAd,
+.brand_copy span:nth-child(2n) {
+    display: none;
+}
+
+/* Moves content to the center */
+.content-holder {
+    margin: 0 166px 0 166px;
+}
+
+/* Stylizes the content */
+h1 {
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: 60px;
+    color: #009688;
+}
+
+h2,
+#ThesaurusTitle,
+#TranslationsTitle {
+    color: #bebebe;
+}
+
+a,
+span.hvr:hover {
+    text-decoration: none;
+    color: #009688;
+}
+
+.illustration {
+    color: #8bc34a;
+}
+
+
+/* Icons */
+/* This was a pain in the arse */
+.snd-icon-plain {
+    background-image: url('https://twemoji.maxcdn.com/2/72x72/1f4e2.png');
+    background-position: center;
+    background-size: contain;
+    height: 18px !important;
+    width: 28px !important;
+}
+
+.snd-icon-US {
+    background-image: url('https://twemoji.maxcdn.com/2/72x72/1f1fa-1f1f2.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.snd-icon-UK {
+    background-image: url('https://twemoji.maxcdn.com/2/72x72/1f1ec-1f1e7.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.i.A {
+    background-image: url('https://twemoji.maxcdn.com/2/72x72/1f4d6.png');
+    background-position: center !important;
+    background-size: contain;
+    height: 18px !important;
+    width: 28px !important;
+}
