@@ -8,10 +8,11 @@
 @author      dnlsrl
 ==/UserStyle== */
 
+@-moz-document domain("www.thefreedictionary.com") {
+
 /* Dark theme for The Free Dictionary */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-@-moz-document domain("www.thefreedictionary.com") {
 /* Word definition */
 /* Dark theme */
 #main,
@@ -54,7 +55,10 @@ aside,
 #fb-root,
 #OccupSlider,
 .TopBannerAd,
-.brand_copy span:nth-child(2n) {
+.brand_copy span:nth-child(2),
+.content-holder > div:first-child,
+.content-holder > div:last-child,
+#main > div:nth-child(3) {
     display: none;
 }
 
